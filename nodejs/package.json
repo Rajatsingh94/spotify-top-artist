@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.0.1",
+    "express": "^4.16.4",
+    "mocha": "^3.5.0",
+    "spotify-web-api-node": "^2.5.0",
+    "twilio": "^3.23.2"
+  },
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "test": "mocha ./test/**/*-test.js"
+  }
+}
