@@ -8,9 +8,9 @@
     "twilio": "^3.23.2"
   },
   "scripts": {
+    "start": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
     "client": "cd client && yarn start",
     "server": "nodemon server.js",
-    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
     "test": "mocha ./test/**/*-test.js"
   }
 }
