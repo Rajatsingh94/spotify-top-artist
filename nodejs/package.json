@@ -4,6 +4,7 @@
     "concurrently": "^4.0.1",
     "express": "^4.16.4",
     "mocha": "^3.5.0",
+    "nodemon": "^1.18.5",
     "spotify-web-api-node": "^2.5.0",
     "twilio": "^3.23.2"
   },
